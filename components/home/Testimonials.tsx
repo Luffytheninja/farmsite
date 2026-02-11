@@ -28,14 +28,14 @@ const testimonials = [
 
 export function Testimonials() {
     return (
-        <section className="py-20 bg-custom-green-dark text-white relative overflow-hidden">
+        <section className="section-padding bg-custom-green-dark text-white relative overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
                 <div className="absolute top-10 right-10 w-64 h-64 bg-custom-accent rounded-full blur-3xl" />
                 <div className="absolute bottom-10 left-10 w-96 h-96 bg-custom-green-light rounded-full blur-3xl" />
             </div>
 
-            <div className="container px-4 md:px-6 relative z-10">
+            <div className="container-max container-padding relative z-10">
                 <div className="flex flex-col items-center text-center mb-16 space-y-4">
                     <span className="text-custom-accent font-medium tracking-wider uppercase text-sm">
                         Testimonials

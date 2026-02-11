@@ -5,8 +5,8 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 export function Contact() {
     return (
-        <section id="contact" className="py-20 bg-custom-beige">
-            <div className="container px-4 md:px-6">
+        <section id="contact" className="section-padding bg-custom-beige">
+            <div className="container-max container-padding">
                 <div className="flex flex-col lg:flex-row gap-12 bg-white rounded-3xl overflow-hidden shadow-xl">
 
                     {/* Image/Info Side */}

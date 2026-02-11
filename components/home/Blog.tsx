@@ -31,8 +31,8 @@ const posts = [
 
 export function Blog() {
     return (
-        <section id="blog" className="py-20 bg-white">
-            <div className="container px-4 md:px-6">
+        <section id="blog" className="section-padding bg-white">
+            <div className="container-max container-padding">
                 <div className="flex flex-col items-center text-center mb-12 space-y-4">
                     <span className="text-custom-accent font-medium tracking-wider uppercase text-sm">
                         From The Blog

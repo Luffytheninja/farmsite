@@ -1,28 +1,155 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --background: #F5F5DC;
-  --foreground: #1A3C1E;
+@theme {
+  /* Fonts */
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-custom-green: #1A3C1E;
+  /* Dark Forest Green */
+  --color-custom-green-light: #2E5C35;
+  --color-custom-green-dark: #0F2612;
+
+  --color-custom-accent: #4CAF50;
+  /* Vibrant Green */
+  --color-custom-accent-hover: #43A047;
+
+  --color-custom-beige: #F5F5DC;
+  /* Cream/Beige */
+  --color-custom-beige-light: #FAF9F6;
+
+  /* Spacing / Layout Variables (if needed for clamping) */
+  --spacing-container: 1rem;
+  /* px-4 */
+  --spacing-container-md: 1.5rem;
+  /* px-6 */
 }
 
-@media (prefers-color-scheme: dark) {
+/* 
+  Define standard CSS variables for light/dark mode.
+  Note: The farm site is primarily designed with fixed colors (Beige/Green), 
+  but we keep the structure for potential future dark mode toggling.
+*/
+@layer base {
   :root {
-    --background: #0F2612;
-    --foreground: #F5F5DC;
+    --background: #F5F5DC;
+    --foreground: #1A3C1E;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0F2612;
+      --foreground: #F5F5DC;
+    }
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: var(--font-outfit), sans-serif;
-  overflow-x: hidden;
+/* ═══ Layout Utilities ═══ */
+@utility container-padding {
+  @apply px-4 md:px-6 lg:px-12;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@utility container-max {
+  @apply max-w-7xl mx-auto;
+}
+
+@utility section-padding {
+  @apply py-16 md:py-24;
+}
+
+/* ═══ Scrollbar (Custom Green/Beige Theme) ═══ */
+@media (min-width: 640px) {
+  ::-webkit-scrollbar {
+    width: 8px;
   }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-custom-beige);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-custom-green-light);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-custom-green);
+  }
+}
+
+/* ═══ Animations ═══ */
+
+/* Breathing Gradient (Subtle Farm Textures) */
+@keyframes gradient-breathe {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.breathing-gradient {
+  background: linear-gradient(270deg,
+      var(--color-custom-beige),
+      var(--color-custom-beige-light),
+      #E8F5E9,
+      /* Very light green tint */
+      var(--color-custom-beige));
+  background-size: 400% 400%;
+  animation: gradient-breathe 15s ease-in-out infinite;
+}
+
+/* Bar Grow Animation */
+@keyframes bar-grow {
+
+  0%,
+  100% {
+    height: 4px;
+  }
+
+  50% {
+    height: 24px;
+  }
+}
+
+.animate-bar {
+  animation: bar-grow 1s ease-in-out infinite;
+}
+
+/* Hover Wiggle */
+@keyframes wiggle {
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-3deg);
+  }
+
+  75% {
+    transform: rotate(3deg);
+  }
+}
+
+.hover-wiggle:hover {
+  animation: wiggle 0.4s ease-in-out;
 }

@@ -5,13 +5,13 @@ import { Button } from "@/components/ui/button";
 
 export function Footer() {
     return (
-        <footer className="bg-custom-green-dark text-white pt-20 pb-10">
-            <div className="container px-4 md:px-6">
+        <footer className="bg-custom-green-dark text-white pt-20 pb-10 border-t border-white/5">
+            <div className="container-max container-padding">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
 
                     {/* Brand Column */}
                     <div className="space-y-6">
-                        <Link href="/" className="flex items-center gap-2 text-white mb-4">
+                        <Link href="/" className="flex items-center gap-2 text-white mb-4 hover-wiggle">
                             <div className="w-10 h-10 bg-custom-accent rounded-full flex items-center justify-center">
                                 <Leaf className="w-6 h-6 text-white" />
                             </div>

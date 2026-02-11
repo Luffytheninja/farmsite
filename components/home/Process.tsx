@@ -30,8 +30,8 @@ const steps = [
 
 export function Process() {
     return (
-        <section className="py-20 bg-custom-beige">
-            <div className="container px-4 md:px-6">
+        <section className="section-padding bg-custom-beige">
+            <div className="container-max container-padding">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
                     <div className="space-y-4 max-w-2xl">
                         <span className="text-custom-accent font-medium tracking-wider uppercase text-sm">

@@ -1,7 +1,6 @@
 "use strict";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Play } from "lucide-react";
 
 export function Hero() {
     return (
@@ -20,28 +19,24 @@ export function Hero() {
             </div>
 
             {/* Content */}
-            <div className="container relative z-20 px-4 md:px-6 text-white h-full flex flex-col justify-center">
+            <div className="container-max container-padding relative z-20 text-white h-full flex flex-col justify-center">
                 <div className="max-w-3xl space-y-6">
-                    <span className="inline-block px-4 py-1 rounded-full bg-custom-accent/20 backdrop-blur-sm border border-custom-accent/40 text-custom-accent font-medium text-sm tracking-widest uppercase mb-4 animate-fade-in-up">
-                        Sustainable Future
-                    </span>
-
-                    <h1 className="text-5xl md:text-7xl font-bold font-serif leading-tight drop-shadow-lg animate-fade-in-up delay-100">
-                        Organic Farming <br />
-                        <span className="text-custom-accent">and Agriculture</span>
+                    <div className="inline-block bg-custom-accent/20 backdrop-blur-sm border border-custom-accent/30 px-4 py-2 rounded-full text-custom-accent font-bold uppercase tracking-wider text-sm animate-pulse">
+                        100% Organic & Natural
+                    </div>
+                    <h1 className="text-5xl md:text-7xl font-bold font-serif leading-tight">
+                        Experience The Real <br />
+                        <span className="text-custom-accent">Taste of Nature</span>
                     </h1>
-
-                    <p className="text-lg md:text-xl text-gray-200 max-w-2xl font-light leading-relaxed animate-fade-in-up delay-200">
-                        Agriculture is the science, art and practice of cultivating plants and livestock.
-                        We provide the freshest organic produce directly from our Lagos farm to your table.
+                    <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-xl">
+                        We provide the finest organic produce directly from our farm to your table. Sustainable farming for a healthier future in Lagos.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 pt-6 animate-fade-in-up delay-300">
-                        <Button size="lg" className="bg-custom-accent hover:bg-custom-accent/90 text-white font-semibold px-8 text-lg h-14 rounded-full shadow-lg hover:shadow-custom-accent/20 transition-all duration-300 transform hover:-translate-y-1">
-                            Get Started
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                        <Button size="lg" className="bg-custom-accent hover:bg-custom-accent/90 text-white font-bold h-14 px-8 rounded-full text-lg shadow-xl hover:shadow-custom-accent/20 transition-all duration-300 hover:-translate-y-1">
+                            Get Started Now
                         </Button>
-                        <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-custom-green-dark font-semibold px-8 text-lg h-14 rounded-full hidden sm:flex items-center gap-2">
-                            <Play className="w-5 h-5 fill-current" />
+                        <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-custom-green-dark font-bold h-14 px-8 rounded-full text-lg shadow-lg transition-all duration-300 hover:-translate-y-1">
                             Watch Video
                         </Button>
                     </div>
