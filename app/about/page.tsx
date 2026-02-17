@@ -39,8 +39,7 @@ export default function AboutPage() {
             {/* Hero Section */}
             <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    {/* [IMAGE PLACEHOLDER: about_hero.png] Candid photo of farmers working */}
-                    <div className="absolute inset-0 bg-primary/60 z-10"></div>
+                    <div className="absolute inset-0 bg-secondary/80 z-10"></div>
                     <div className="w-full h-full bg-[#4A4E40] bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1595079676339-1534801ad6cf?q=80&w=2000')" }}></div>
                 </div>
                 <div className="container-max container-padding relative z-20 text-center text-white">
@@ -53,7 +52,7 @@ export default function AboutPage() {
                             We&apos;re Not Just Farmers. <br />
                             <span className="text-accent italic">We&apos;re Stewards of the Land.</span>
                         </h1>
-                        <p className="text-lg md:text-xl font-body text-cream/90">
+                        <p className="text-lg md:text-xl font-body text-white/80">
                             Meet the family behind the farm — and learn why we do what we do.
                         </p>
                     </motion.div>
@@ -70,28 +69,28 @@ export default function AboutPage() {
                                 Wingate Integrated Farms was built on a single conviction: that Nigeria deserves better food, and better farming. Set across a sprawling agricultural layout in Epe, Lagos, we&apos;ve grown from a focused livestock operation into a fully integrated farm — one that spans four distinct divisions and serves customers across Lagos and beyond.
                             </p>
                             <p>
-                                Our farm operates across four core areas: <strong className="text-secondary">Aquaculture</strong> (catfish farming in freshwater ponds), <strong className="text-secondary">Poultry</strong> (chickens, turkeys, and egg production), <strong className="text-secondary">Piggery</strong> (ethically raised pork), and <strong className="text-secondary">Livestock</strong> (cattle, sheep, rams, and goats). We also cultivate crops — cassava and plantain — that complement our animal produce and serve a wide range of local and commercial needs.
+                                Our farm operates across four core areas: <strong className="text-primary">Aquaculture</strong> (catfish farming in freshwater ponds), <strong className="text-primary">Poultry</strong> (chickens, turkeys, and egg production), <strong className="text-primary">Piggery</strong> (ethically raised pork), and <strong className="text-primary">Livestock</strong> (cattle, sheep, rams, and goats). We also cultivate crops — cassava and plantain — that complement our animal produce and serve a wide range of local and commercial needs.
                             </p>
                             <p>
                                 Today, you can find us not just at the farm in Epe, but at our corporate office in Lekki and our dedicated produce outlet shop in Ajah-Lekki — bringing the freshness of the farm directly to Lagos communities. Whether you&apos;re a household placing a weekly order or a business sourcing in bulk, Wingate is built to serve you well.
                             </p>
-                            <p className="italic font-serif text-primary text-xl mt-8">
+                            <blockquote className="border-l-4 border-accent pl-6 italic font-serif text-primary text-xl mt-8">
                                 &ldquo;Every decision we make comes back to the same question: would we feed this to our own family? If the answer is yes, it leaves our farm. If it isn&apos;t, it doesn&apos;t.&rdquo;
-                            </p>
+                            </blockquote>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Values */}
-            <section className="section-padding bg-sage/10">
+            <section className="section-padding bg-sage/15">
                 <div className="container-max container-padding">
                     <h2 className="text-3xl md:text-4xl font-serif font-bold mb-16 text-center text-primary">What We Stand For</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                         {values.map((value, idx) => (
-                            <div key={idx} className="text-center space-y-4">
-                                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                                    <value.icon className="w-8 h-8 text-accent" />
+                            <div key={idx} className="text-center space-y-4 group">
+                                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-6 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-primary/20 group-hover:-translate-y-1">
+                                    <value.icon className="w-8 h-8 text-white" />
                                 </div>
                                 <h3 className="text-2xl font-serif font-bold text-primary">{value.title}</h3>
                                 <p className="text-charcoal/70 leading-relaxed font-body">{value.description}</p>
@@ -108,12 +107,12 @@ export default function AboutPage() {
                     <div className="max-w-3xl mx-auto space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-sage before:to-transparent">
                         {timeline.map((item, idx) => (
                             <div key={idx} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                                <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-accent text-primary font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                                    <div className="w-3 h-3 bg-primary rounded-full"></div>
+                                <div className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-accent bg-white text-primary font-bold shadow-md shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                                    <div className="w-3 h-3 bg-accent rounded-full"></div>
                                 </div>
-                                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-xl border border-sage/20 bg-white shadow-sm">
+                                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-xl border border-sage/30 bg-white shadow-sm hover:shadow-md transition-shadow">
                                     <div className="flex items-center justify-between space-x-2 mb-1">
-                                        <time className="font-serif font-bold text-primary text-xl">{item.year}</time>
+                                        <time className="font-serif font-bold text-accent text-xl">{item.year}</time>
                                     </div>
                                     <div className="text-charcoal/70">{item.event}</div>
                                 </div>

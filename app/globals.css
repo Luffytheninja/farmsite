@@ -6,13 +6,13 @@
   --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
   --font-body: var(--font-source-serif), ui-serif, Georgia, serif;
 
-  /* Colors */
-  --color-primary: #2D5016;    /* Deep Forest Green */
-  --color-secondary: #6B3F1E;  /* Warm Earth Brown */
-  --color-accent: #D4A437;     /* Harvest Gold */
-  --color-cream: #FAF6EF;      /* Background Cream */
-  --color-charcoal: #2C2C2C;   /* Main Text */
-  --color-sage: #C8D8B4;       /* Light Divider */
+  /* Colors — Green / Blue / Black / White */
+  --color-primary: #0A6847;    /* Rich Emerald */
+  --color-secondary: #1B2A4A;  /* Deep Navy */
+  --color-accent: #2196F3;     /* Electric Blue */
+  --color-cream: #F8FAFB;      /* Clean White */
+  --color-charcoal: #111111;   /* Jet Black */
+  --color-sage: #D1D9E0;       /* Cool Gray */
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -24,8 +24,8 @@
 
 @layer base {
   :root {
-    --background: #FAF6EF;
-    --foreground: #2C2C2C;
+    --background: #F8FAFB;
+    --foreground: #111111;
   }
 
   body {
@@ -60,63 +60,48 @@
   @apply py-16 md:py-24;
 }
 
-/* ═══ Scrollbar (Custom Green/Beige Theme) ═══ */
+/* ═══ Scrollbar (Custom Green/Blue Theme) ═══ */
 @media (min-width: 640px) {
   ::-webkit-scrollbar {
     width: 8px;
   }
 
   ::-webkit-scrollbar-track {
-    background: var(--color-custom-beige);
+    background: var(--color-cream);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: var(--color-custom-green-light);
+    background: var(--color-sage);
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--color-custom-green);
+    background: var(--color-primary);
   }
 }
 
 /* ═══ Animations ═══ */
 
-/* Breathing Gradient (Subtle Farm Textures) */
+/* Breathing Gradient */
 @keyframes gradient-breathe {
-
-  0%,
-  100% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 .breathing-gradient {
   background: linear-gradient(270deg,
-      var(--color-custom-beige),
-      var(--color-custom-beige-light),
-      #E8F5E9,
-      /* Very light green tint */
-      var(--color-custom-beige));
+      var(--color-cream),
+      #EBF5FB,
+      #E8F8F0,
+      var(--color-cream));
   background-size: 400% 400%;
   animation: gradient-breathe 15s ease-in-out infinite;
 }
 
 /* Bar Grow Animation */
 @keyframes bar-grow {
-
-  0%,
-  100% {
-    height: 4px;
-  }
-
-  50% {
-    height: 24px;
-  }
+  0%, 100% { height: 4px; }
+  50% { height: 24px; }
 }
 
 .animate-bar {
@@ -125,21 +110,40 @@
 
 /* Hover Wiggle */
 @keyframes wiggle {
-
-  0%,
-  100% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(-3deg);
-  }
-
-  75% {
-    transform: rotate(3deg);
-  }
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
 }
 
 .hover-wiggle:hover {
   animation: wiggle 0.4s ease-in-out;
+}
+
+/* Slide-in for mobile menu */
+@keyframes slide-in {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slide-out {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-out {
+  animation: slide-out 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Fade in */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out forwards;
 }

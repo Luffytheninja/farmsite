@@ -21,17 +21,17 @@ const features = [
 
 export function Features() {
     return (
-        <section className="bg-custom-green-dark py-12 relative z-20 -mt-10 mx-4 md:mx-auto max-w-6xl rounded-2xl shadow-xl">
+        <section className="bg-secondary py-12 relative z-20 -mt-10 mx-4 md:mx-auto max-w-6xl rounded-2xl shadow-2xl shadow-secondary/30">
             <div className="container-padding">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {features.map((feature, index) => (
-                        <div key={index} className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors border border-transparent hover:border-white/10 group">
-                            <div className="p-3 bg-white/10 rounded-full group-hover:bg-custom-accent/20 transition-colors">
-                                <feature.icon className="w-8 h-8 text-custom-accent" />
+                        <div key={index} className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10 group">
+                            <div className="p-3 bg-white/10 rounded-xl group-hover:bg-accent/20 transition-colors">
+                                <feature.icon className="w-8 h-8 text-accent" />
                             </div>
                             <div>
                                 <h3 className="text-white font-bold text-lg font-serif">{feature.title}</h3>
-                                <p className="text-gray-400 text-sm">{feature.description}</p>
+                                <p className="text-white/50 text-sm">{feature.description}</p>
                             </div>
                         </div>
                     ))}
