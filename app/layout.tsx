@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
-import { Outfit, Playfair_Display } from "next/font/google";
+import { Playfair_Display, Source_Serif_4, Nunito } from "next/font/google";
 import "./globals.css";
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  variable: "--font-outfit",
-  display: "swap",
-});
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -14,9 +8,21 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
+const sourceSerif = Source_Serif_4({
+  subsets: ["latin"],
+  variable: "--font-source-serif",
+  display: "swap",
+});
+
+const nunito = Nunito({
+  subsets: ["latin"],
+  variable: "--font-nunito",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Lagos Farm | Premium Organic Produce",
-  description: "Sustainable and organic farming solutions in Lagos, Nigeria.",
+  title: "Wingate Integrated Farms | Fresh from Our Fields to Your Table",
+  description: "Ethically farmed, locally sourced produce delivered with care from Epe, Lagos.",
 };
 
 export default function RootLayout({
@@ -27,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${outfit.variable} ${playfair.variable} antialiased font-sans`}
+        className={`${playfair.variable} ${sourceSerif.variable} ${nunito.variable} antialiased font-body`}
       >
         {children}
       </body>

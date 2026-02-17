@@ -2,58 +2,48 @@
 
 @theme {
   /* Fonts */
-  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+  --font-body: var(--font-source-serif), ui-serif, Georgia, serif;
 
   /* Colors */
+  --color-primary: #2D5016;    /* Deep Forest Green */
+  --color-secondary: #6B3F1E;  /* Warm Earth Brown */
+  --color-accent: #D4A437;     /* Harvest Gold */
+  --color-cream: #FAF6EF;      /* Background Cream */
+  --color-charcoal: #2C2C2C;   /* Main Text */
+  --color-sage: #C8D8B4;       /* Light Divider */
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --color-custom-green: #1A3C1E;
-  /* Dark Forest Green */
-  --color-custom-green-light: #2E5C35;
-  --color-custom-green-dark: #0F2612;
-
-  --color-custom-accent: #4CAF50;
-  /* Vibrant Green */
-  --color-custom-accent-hover: #43A047;
-
-  --color-custom-beige: #F5F5DC;
-  /* Cream/Beige */
-  --color-custom-beige-light: #FAF9F6;
-
-  /* Spacing / Layout Variables (if needed for clamping) */
-  --spacing-container: 1rem;
-  /* px-4 */
-  --spacing-container-md: 1.5rem;
-  /* px-6 */
+  /* Spacing / Layout Variables */
+  --spacing-container: 1.5rem;   /* px-6 */
+  --spacing-container-lg: 3rem;  /* px-12 */
 }
 
-/* 
-  Define standard CSS variables for light/dark mode.
-  Note: The farm site is primarily designed with fixed colors (Beige/Green), 
-  but we keep the structure for potential future dark mode toggling.
-*/
 @layer base {
   :root {
-    --background: #F5F5DC;
-    --foreground: #1A3C1E;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background: #0F2612;
-      --foreground: #F5F5DC;
-    }
+    --background: #FAF6EF;
+    --foreground: #2C2C2C;
   }
 
   body {
     background-color: var(--background);
     color: var(--foreground);
-    font-family: var(--font-sans);
+    font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    color: var(--color-primary);
+  }
+
+  button, .cta-text {
+    font-family: var(--font-sans);
   }
 }
 
