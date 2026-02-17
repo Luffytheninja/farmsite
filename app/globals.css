@@ -82,21 +82,7 @@
 
 /* ═══ Animations ═══ */
 
-/* Breathing Gradient */
-@keyframes gradient-breathe {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
 
-.breathing-gradient {
-  background: linear-gradient(270deg,
-      var(--color-cream),
-      #EBF5FB,
-      #E8F8F0,
-      var(--color-cream));
-  background-size: 400% 400%;
-  animation: gradient-breathe 15s ease-in-out infinite;
-}
 
 /* Bar Grow Animation */
 @keyframes bar-grow {

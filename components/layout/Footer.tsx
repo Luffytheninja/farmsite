@@ -5,9 +5,6 @@ import { Leaf, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 export function Footer() {
     return (
         <footer className="bg-secondary text-white pt-20 pb-10 border-t border-white/5 relative overflow-hidden">
-            {/* Subtle gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-secondary via-secondary to-primary/20 pointer-events-none"></div>
-            
             <div className="container-max container-padding relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
 

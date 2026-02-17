@@ -87,7 +87,7 @@ export default function ProducePage() {
             
             {/* Header */}
             <header className="pt-32 pb-16 bg-secondary text-white text-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-secondary via-secondary to-primary/30 pointer-events-none"></div>
+
                 <div className="container-max container-padding relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -136,7 +136,7 @@ export default function ProducePage() {
             {/* Livestock Section */}
             <section id="livestock" className="section-padding bg-white">
                 <div className="container-max container-padding">
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-primary">🐓 Livestock & Aquaculture</h2>
+                    <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-primary">Livestock & Aquaculture</h2>
                     <p className="text-charcoal/60 mb-12 max-w-2xl">
                         Wingate&apos;s livestock operation spans four divisions: Poultry, Aquaculture, Piggery, and Livestock (cattle, sheep, rams, goats).
                     </p>
@@ -164,7 +164,7 @@ export default function ProducePage() {
             {/* Crops Section */}
             <section id="crops" className="section-padding bg-cream">
                 <div className="container-max container-padding">
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-primary">🌿 Crops</h2>
+                    <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-primary">Crops</h2>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
                         {products.crops.map((product) => (
                             <div key={product.id} className="flex flex-col md:flex-row gap-6 items-start bg-white p-6 rounded-2xl border border-sage/20 hover:shadow-lg hover:border-accent/20 transition-all duration-300 group">
@@ -194,9 +194,9 @@ export default function ProducePage() {
                         Call or WhatsApp us directly, or use the order form on our Contact page. We offer farm pickup and local delivery — ask us about delivery schedules in your area.
                     </p>
                     <div className="flex flex-wrap justify-center gap-8 text-sm font-bold pt-4">
-                        <div className="flex items-center gap-2">📞 +234 808 200 3009</div>
-                        <div className="flex items-center gap-2">🚚 Delivery available Mon–Sat</div>
-                        <div className="flex items-center gap-2">📍 Farm Pickup: Mon–Sat, 7am–5pm</div>
+                        <div className="flex items-center gap-2">Phone: +234 808 200 3009</div>
+                        <div className="flex items-center gap-2">Delivery: Available Mon–Sat</div>
+                        <div className="flex items-center gap-2">Farm Pickup: Mon–Sat, 7am–5pm</div>
                     </div>
                 </div>
             </section>

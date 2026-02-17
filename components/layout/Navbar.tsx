@@ -110,8 +110,8 @@ export function Navbar() {
                             >
                                 Order Now
                             </Button>
-                            <p className="text-center text-xs text-charcoal/40 mt-4 font-sans">
-                                📞 +234 808 200 3009
+                            <p className="text-center text-xs text-charcoal/40 mt-4 font-sans font-bold">
+                                Phone: +234 808 200 3009
                             </p>
                         </div>
                     </div>

@@ -15,15 +15,15 @@ export function Hero() {
                     className="object-cover"
                     priority
                 />
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/60 to-transparent z-10" />
+                {/* Overlay: Deep shadow for text legibility without gradients */}
+                <div className="absolute inset-0 bg-black/60 z-10" />
             </div>
 
             {/* Content */}
             <div className="container-max container-padding relative z-20 text-white h-full flex flex-col justify-center">
                 <div className="max-w-3xl space-y-6">
                     <div className="inline-block bg-accent/20 backdrop-blur-sm border border-accent/30 px-5 py-2.5 rounded-full text-accent font-bold uppercase tracking-wider text-xs">
-                        ✦ 100% Organic & Natural
+                        100% Organic & Natural
                     </div>
                     <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold font-serif leading-[1.1] text-white">
                         Experience The Real <br />
