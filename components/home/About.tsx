@@ -19,7 +19,7 @@ export function About() {
                     <div className="w-full lg:w-1/2 relative">
                         <div className="relative h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/about_image.jpg"
+                                src="/rams.jpg"
                                 alt="Modern Farming"
                                 fill
                                 className="object-cover hover:scale-105 transition-transform duration-700"

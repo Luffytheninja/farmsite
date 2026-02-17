@@ -14,7 +14,7 @@ const products = {
             description: "Our free-range laying hens produce eggs with rich, deep-yellow yolks. No artificial lighting or overcrowded cages — just well-kept hens on open ground.",
             availability: "Sold by the dozen or in bulk trays (30-count).",
             seasonal: "Available year-round.",
-            image: "https://images.unsplash.com/photo-1598965402089-897ce524ba3b?q=80&w=800"
+            image: "/eggs-crates.jpg"
         },
         {
             id: "chicken",
@@ -23,7 +23,7 @@ const products = {
             description: "Raised with room to scratch and forage. We don't rush growth with artificial feed or antibiotics. Real texture and genuine flavour.",
             availability: "Whole bird or cuts (dressed and ready).",
             seasonal: "Available weekly. Large orders require 48h notice.",
-            image: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?q=80&w=800"
+            image: "/free-range-chickens.jpg"
         },
         {
             id: "turkey",
@@ -32,7 +32,7 @@ const products = {
             description: "Raised slowly and naturally on our farm in Epe. Premium, flavourful choice for celebrations and family meals.",
             availability: "Whole bird available; cuts on request.",
             seasonal: "Best ordered 1 week in advance. Festive seasons fill quickly.",
-            image: "https://images.unsplash.com/photo-1605333396915-47ed6b68a00e?q=80&w=800"
+            image: "/turkey.jpg"
         },
         {
             id: "catfish",
@@ -41,7 +41,7 @@ const products = {
             description: "Raised in clean, freshwater ponds in Epe. Harvested to order, genuinely fresh. Perfect for pepper soup or grilling.",
             availability: "Live, cleaned whole, or filleted.",
             seasonal: "Available year-round. Live fish orders best 24-48h advance.",
-            image: "https://images.unsplash.com/photo-1524704654690-b56c05c78a00?q=80&w=800"
+            image: "/catfish.jpg"
         },
         {
             id: "pork",
@@ -50,7 +50,7 @@ const products = {
             description: "Raised with space and clean feed — no hormones. Depth of flavour for your pepper soup, suya, or pork belly.",
             availability: "Whole pig, half, or specific cuts.",
             seasonal: "Year-round availability. Large orders require booking.",
-            image: "https://images.unsplash.com/photo-1593452712180-6127dc1abc6d?q=80&w=800"
+            image: "/pigs.jpg"
         }
     ],
     crops: [
@@ -61,7 +61,7 @@ const products = {
             description: "High-starch, high-quality roots suited for home cooking and commercial processing. Harvested at peak maturity.",
             availability: "Fresh roots (by weight) or processed forms.",
             seasonal: "Available year-round.",
-            image: "https://images.unsplash.com/photo-1596711675765-685b31bf37b3?q=80&w=800"
+            image: "/free-range-chickens.jpg"
         },
         {
             id: "plantain",
@@ -70,7 +70,7 @@ const products = {
             description: "Sweet when ripe, starchy when unripe. Grown without synthetic pesticides and harvested at the right time.",
             availability: "Ripe (yellow) or unripe (green). Sold by bunch or weight.",
             seasonal: "Peak availability varies seasonally.",
-            image: "https://images.unsplash.com/photo-1528825871115-3581a5387919?q=80&w=800"
+            image: "/eggs-crates.jpg"
         }
     ]
 };

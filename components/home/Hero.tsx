@@ -9,7 +9,7 @@ export function Hero() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/farm_hero_background.png"
+                    src="/wingate-hero.png"
                     alt="Organic Farm Landscape"
                     fill
                     className="object-cover"
@@ -37,9 +37,7 @@ export function Hero() {
                         <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-bold h-14 px-8 rounded-xl text-base shadow-xl shadow-accent/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-accent/30">
                             Get Started Now
                         </Button>
-                        <Button variant="outline" size="lg" className="border-2 border-white/30 text-white hover:bg-white hover:text-secondary font-bold h-14 px-8 rounded-xl text-base transition-all duration-300 hover:-translate-y-1 backdrop-blur-sm">
-                            Watch Video
-                        </Button>
+
                     </div>
                 </div>
             </div>

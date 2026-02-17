@@ -7,17 +7,17 @@ const services = [
     {
         title: "Agricultural & Farming",
         desc: "Modern farming techniques for sustainable crop production.",
-        image: "/service_agriculture.jpg",
+        image: "/layers-poultry.jpg",
     },
     {
         title: "Vegetables & Fruits",
         desc: "Fresh, organic seasonal produce harvested daily.",
-        image: "/service_vegetables.jpg",
+        image: "/layers-poultry.jpg",
     },
     {
         title: "Dairy Production",
         desc: "Pure milk and dairy products from grass-fed cattle.",
-        image: "/service_dairy.jpg",
+        image: "/cows.jpg",
     },
 ];
 
