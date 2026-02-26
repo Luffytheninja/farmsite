@@ -28,16 +28,16 @@ const testimonials = [
 
 export function Testimonials() {
     return (
-        <section className="section-padding bg-custom-green-dark text-white relative overflow-hidden">
+        <section className="section-padding bg-primary text-white relative overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
-                <div className="absolute top-10 right-10 w-64 h-64 bg-custom-accent rounded-full blur-3xl" />
+                <div className="absolute top-10 right-10 w-64 h-64 bg-accent rounded-full blur-3xl" />
                 <div className="absolute bottom-10 left-10 w-96 h-96 bg-custom-green-light rounded-full blur-3xl" />
             </div>
 
             <div className="container-max container-padding relative z-10">
                 <div className="flex flex-col items-center text-center mb-16 space-y-4">
-                    <span className="text-custom-accent font-medium tracking-wider uppercase text-sm">
+                    <span className="text-accent font-medium tracking-wider uppercase text-sm">
                         Testimonials
                     </span>
                     <h2 className="text-4xl md:text-5xl font-bold font-serif leading-tight">
@@ -48,11 +48,11 @@ export function Testimonials() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {testimonials.map((testimonial, index) => (
                         <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl relative group hover:bg-white/10 transition-colors duration-300">
-                            <Quote className="absolute top-6 right-6 w-8 h-8 text-custom-accent/20 group-hover:text-custom-accent transition-colors" />
+                            <Quote className="absolute top-6 right-6 w-8 h-8 text-accent/20 group-hover:text-accent transition-colors" />
 
                             <div className="flex gap-1 mb-6">
                                 {[...Array(testimonial.rating)].map((_, i) => (
-                                    <Star key={i} className="w-4 h-4 fill-custom-accent text-custom-accent" />
+                                    <Star key={i} className="w-4 h-4 fill-accent text-accent" />
                                 ))}
                             </div>
 
@@ -61,7 +61,7 @@ export function Testimonials() {
                             </p>
 
                             <div className="flex items-center gap-4">
-                                <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-custom-accent">
+                                <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-accent">
                                     <Image
                                         src={testimonial.image}
                                         alt={testimonial.name}
@@ -71,7 +71,7 @@ export function Testimonials() {
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-white font-serif">{testimonial.name}</h4>
-                                    <p className="text-sm text-custom-accent">{testimonial.role}</p>
+                                    <p className="text-sm text-accent">{testimonial.role}</p>
                                 </div>
                             </div>
                         </div>

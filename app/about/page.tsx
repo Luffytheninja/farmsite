@@ -40,7 +40,7 @@ export default function AboutPage() {
             <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-secondary/80 z-10"></div>
-                    <div className="w-full h-full bg-[#4A4E40] bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1595079676339-1534801ad6cf?q=80&w=2000')" }}></div>
+                    <div className="w-full h-full bg-[#4A4E40] bg-cover bg-center" style={{ backgroundImage: "url('/about-us.jpg')" }}></div>
                 </div>
                 <div className="container-max container-padding relative z-20 text-center text-white">
                     <motion.div

@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Leaf, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
     { name: "Home", href: "/" },
@@ -20,15 +21,15 @@ export function Navbar() {
                 <div className="container-max container-padding h-20 flex items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2.5 group">
-                        <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center transition-all duration-300 group-hover:rotate-6 group-hover:shadow-lg group-hover:shadow-primary/20">
-                            <Leaf className="w-5 h-5 text-white" />
+                        <div className="w-12 h-12 relative flex items-center justify-center transition-all duration-300 group-hover:rotate-3 group-hover:scale-105">
+                            <Image src="/white-logo.png" alt="Wingate Gold Logo" fill className="object-contain" />
                         </div>
                         <div className="flex flex-col">
                             <span className="text-xl font-bold font-serif leading-tight text-primary">
-                                Wingate
+                                Wingate Gold
                             </span>
                             <span className="text-[10px] uppercase tracking-[0.2em] text-secondary font-sans font-bold">
-                                Integrated Farms
+                                Agro-Allied Services
                             </span>
                         </div>
                     </Link>
@@ -79,10 +80,10 @@ export function Navbar() {
                         {/* Drawer Header */}
                         <div className="h-20 flex items-center px-6 border-b border-sage/30">
                             <Link href="/" className="flex items-center gap-2.5" onClick={() => setIsOpen(false)}>
-                                <div className="w-9 h-9 bg-primary rounded-xl flex items-center justify-center">
-                                    <Leaf className="w-5 h-5 text-white" />
+                                <div className="w-10 h-10 relative flex items-center justify-center pr-2">
+                                    <Image src="/white-logo.png" alt="Wingate Gold Logo" fill className="object-contain" />
                                 </div>
-                                <span className="text-lg font-bold font-serif text-primary">Wingate</span>
+                                <span className="text-lg font-bold font-serif text-primary">Wingate Gold</span>
                             </Link>
                         </div>
 

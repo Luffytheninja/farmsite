@@ -5,40 +5,40 @@ import { ArrowRight, Sprout } from "lucide-react";
 
 const services = [
     {
-        title: "Agricultural & Farming",
-        desc: "Modern farming techniques for sustainable crop production.",
-        image: "/layers-poultry.jpg",
+        title: "Crop Production",
+        desc: "Modern farming techniques for sustainable crop production, featuring our premium Cassava and Plantains.",
+        image: "/cassava-plant.jfif",
     },
     {
-        title: "Vegetables & Fruits",
-        desc: "Fresh, organic seasonal produce harvested daily.",
-        image: "/layers-poultry.jpg",
+        title: "Livestock Farming",
+        desc: "Healthy, ethically raised livestock managed with expert care.",
+        image: "/livestock-new.jpg",
     },
     {
-        title: "Dairy Production",
-        desc: "Pure milk and dairy products from grass-fed cattle.",
-        image: "/cows.jpg",
+        title: "Aquaculture & Fish",
+        desc: "Farm-fresh catfish raised in clean, sustainable environments.",
+        image: "/farm-fresh-catfish.jpg",
     },
 ];
 
 export function Services() {
     return (
-        <section id="services" className="section-padding bg-custom-beige">
+        <section id="services" className="section-padding bg-cream">
             <div className="container-max container-padding">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
                     <div className="max-w-2xl">
-                        <span className="text-custom-accent font-medium tracking-wider uppercase text-sm mb-2 block">
+                        <span className="text-accent font-medium tracking-wider uppercase text-sm mb-2 block">
                             Our Services
                         </span>
-                        <h2 className="text-4xl md:text-5xl font-bold font-serif text-custom-green-dark leading-tight">
+                        <h2 className="text-4xl md:text-5xl font-bold font-serif text-primary leading-tight">
                             We Provide High Quality <br /> Agriculture Services
                         </h2>
                     </div>
                     <div className="flex gap-4">
-                        <Button variant="outline" size="icon" className="rounded-full border-custom-green-dark/20 hover:bg-custom-accent hover:text-white hover:border-custom-accent transition-colors">
+                        <Button variant="outline" size="icon" className="rounded-full border-primary/20 hover:bg-accent hover:text-white hover:border-accent transition-colors">
                             <ArrowRight className="w-5 h-5 rotate-180" />
                         </Button>
-                        <Button variant="outline" size="icon" className="rounded-full border-custom-green-dark/20 hover:bg-custom-accent hover:text-white hover:border-custom-accent transition-colors">
+                        <Button variant="outline" size="icon" className="rounded-full border-primary/20 hover:bg-accent hover:text-white hover:border-accent transition-colors">
                             <ArrowRight className="w-5 h-5" />
                         </Button>
                     </div>
@@ -52,18 +52,18 @@ export function Services() {
                                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
                             </div>
                             <div className="p-6 relative">
-                                <div className="absolute -top-8 right-6 bg-custom-accent text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg group-hover:scale-110 transition-transform duration-300 border-4 border-white">
+                                <div className="absolute -top-8 right-6 bg-accent text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg group-hover:scale-110 transition-transform duration-300 border-4 border-white">
                                     <Sprout className="w-6 h-6" />
                                 </div>
 
-                                <h3 className="text-xl font-bold text-custom-green-dark font-serif mb-3 group-hover:text-custom-accent transition-colors">
+                                <h3 className="text-xl font-bold text-primary font-serif mb-3 group-hover:text-accent transition-colors">
                                     {service.title}
                                 </h3>
                                 <p className="text-gray-600 mb-4 line-clamp-3">
                                     {service.desc}
                                 </p>
 
-                                <a href="#" className="inline-flex items-center gap-2 text-custom-green-dark font-bold text-sm uppercase tracking-wide group-hover:text-custom-accent transition-colors">
+                                <a href="#" className="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-wide group-hover:text-accent transition-colors">
                                     Read More <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                                 </a>
                             </div>

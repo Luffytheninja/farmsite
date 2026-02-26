@@ -1,6 +1,7 @@
 "use strict";
+import Image from "next/image";
 import Link from "next/link";
-import { Leaf, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 export function Footer() {
     return (
@@ -11,15 +12,15 @@ export function Footer() {
                     {/* Brand Column */}
                     <div className="space-y-6">
                         <Link href="/" className="flex items-center gap-2.5 group">
-                            <div className="w-10 h-10 bg-accent rounded-xl flex items-center justify-center transition-all duration-300 group-hover:rotate-6 group-hover:shadow-lg group-hover:shadow-accent/30">
-                                <Leaf className="w-5 h-5 text-white" />
+                            <div className="w-14 h-14 relative flex items-center justify-center transition-all duration-300 group-hover:rotate-3 group-hover:scale-105">
+                                <Image src="/green-logo.png" alt="Wingate Gold Logo" fill className="object-contain" />
                             </div>
                             <div className="flex flex-col">
                                 <span className="text-xl font-bold font-serif leading-tight text-white">
-                                    Wingate
+                                    Wingate Gold
                                 </span>
                                 <span className="text-[10px] uppercase tracking-[0.2em] text-accent font-sans font-bold">
-                                    Integrated Farms
+                                    Agro-Allied Services
                                 </span>
                             </div>
                         </Link>
@@ -107,7 +108,7 @@ export function Footer() {
 
                 {/* Copyright */}
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
-                    <p>&copy; 2026 Wingate Integrated Farms. All Rights Reserved.</p>
+                    <p>&copy; 2026 Wingate Gold Agro-Allied Services. All Rights Reserved.</p>
                     <div className="flex gap-6">
                         <Link href="#" className="hover:text-accent transition-colors">Privacy Policy</Link>
                         <Link href="#" className="hover:text-accent transition-colors">Terms of Use</Link>

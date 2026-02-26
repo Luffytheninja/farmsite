@@ -34,10 +34,10 @@ export function Blog() {
         <section id="blog" className="section-padding bg-white">
             <div className="container-max container-padding">
                 <div className="flex flex-col items-center text-center mb-12 space-y-4">
-                    <span className="text-custom-accent font-medium tracking-wider uppercase text-sm">
+                    <span className="text-accent font-medium tracking-wider uppercase text-sm">
                         From The Blog
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold font-serif text-custom-green-dark leading-tight">
+                    <h2 className="text-4xl md:text-5xl font-bold font-serif text-primary leading-tight">
                         Our Blog & Articles
                     </h2>
                 </div>
@@ -52,7 +52,7 @@ export function Blog() {
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
-                                <div className="absolute top-4 left-4 bg-custom-accent text-white text-xs font-bold uppercase py-1 px-3 rounded-full shadow-md">
+                                <div className="absolute top-4 left-4 bg-accent text-white text-xs font-bold uppercase py-1 px-3 rounded-full shadow-md">
                                     {post.category}
                                 </div>
                             </div>
@@ -60,24 +60,24 @@ export function Blog() {
                             <div className="p-6">
                                 <div className="flex items-center gap-4 text-xs text-gray-500 mb-3 border-b border-gray-100 pb-3">
                                     <div className="flex items-center gap-1">
-                                        <User className="w-3 h-3 text-custom-accent" />
+                                        <User className="w-3 h-3 text-accent" />
                                         <span>{post.author}</span>
                                     </div>
                                     <div className="flex items-center gap-1">
-                                        <Calendar className="w-3 h-3 text-custom-accent" />
+                                        <Calendar className="w-3 h-3 text-accent" />
                                         <span>{post.date}</span>
                                     </div>
                                     <div className="flex items-center gap-1 ml-auto">
-                                        <MessageSquare className="w-3 h-3 text-custom-accent" />
+                                        <MessageSquare className="w-3 h-3 text-accent" />
                                         <span>{post.comments} Comments</span>
                                     </div>
                                 </div>
 
-                                <h3 className="text-xl font-bold text-custom-green-dark font-serif mb-3 leading-snug group-hover:text-custom-accent transition-colors">
+                                <h3 className="text-xl font-bold text-primary font-serif mb-3 leading-snug group-hover:text-accent transition-colors">
                                     {post.title}
                                 </h3>
 
-                                <a href="#" className="inline-block text-custom-green-dark font-medium text-sm hover:text-custom-accent transition-colors relative group-hover:translate-x-1 duration-300">
+                                <a href="#" className="inline-block text-primary font-medium text-sm hover:text-accent transition-colors relative group-hover:translate-x-1 duration-300">
                                     Read More &rarr;
                                 </a>
                             </div>

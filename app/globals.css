@@ -6,13 +6,13 @@
   --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
   --font-body: var(--font-source-serif), ui-serif, Georgia, serif;
 
-  /* Colors — Green / Blue / Black / White */
-  --color-primary: #0A6847;    /* Rich Emerald */
-  --color-secondary: #1B2A4A;  /* Deep Navy */
-  --color-accent: #2196F3;     /* Electric Blue */
-  --color-cream: #F8FAFB;      /* Clean White */
+  /* Colors — Wingate Gold Palette */
+  --color-primary: #003223;    /* Bottle Green */
+  --color-secondary: #003223;  /* Bottle Green */
+  --color-accent: #FF6400;     /* Pumpkin Orange */
+  --color-cream: #F5EBE1;      /* Eggshell White */
   --color-charcoal: #111111;   /* Jet Black */
-  --color-sage: #D1D9E0;       /* Cool Gray */
+  --color-sage: #8CC850;       /* Salad Green */
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -24,7 +24,7 @@
 
 @layer base {
   :root {
-    --background: #F8FAFB;
+    --background: #F5EBE1;
     --foreground: #111111;
   }
 

@@ -41,7 +41,7 @@ const products = {
             description: "Raised in clean, freshwater ponds in Epe. Harvested to order, genuinely fresh. Perfect for pepper soup or grilling.",
             availability: "Live, cleaned whole, or filleted.",
             seasonal: "Available year-round. Live fish orders best 24-48h advance.",
-            image: "/catfish.jpg"
+            image: "/farm-fresh-catfish.jpg"
         },
         {
             id: "pork",
@@ -61,7 +61,7 @@ const products = {
             description: "High-starch, high-quality roots suited for home cooking and commercial processing. Harvested at peak maturity.",
             availability: "Fresh roots (by weight) or processed forms.",
             seasonal: "Available year-round.",
-            image: "/free-range-chickens.jpg"
+            image: "/cassava.png"
         },
         {
             id: "plantain",
@@ -70,7 +70,7 @@ const products = {
             description: "Sweet when ripe, starchy when unripe. Grown without synthetic pesticides and harvested at the right time.",
             availability: "Ripe (yellow) or unripe (green). Sold by bunch or weight.",
             seasonal: "Peak availability varies seasonally.",
-            image: "/eggs-crates.jpg"
+            image: "/plantain.jpg"
         }
     ]
 };
@@ -112,7 +112,7 @@ export default function ProducePage() {
                             className="group relative h-64 rounded-2xl overflow-hidden text-left shadow-lg hover:shadow-xl transition-shadow"
                         >
                             <div className="absolute inset-0 bg-secondary/70 group-hover:bg-secondary/50 transition-colors z-10"></div>
-                            <div className="w-full h-full bg-[#5D6055] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=800')" }}></div>
+                            <div className="w-full h-full bg-[#5D6055] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style={{ backgroundImage: "url('/livestock.jpg')" }}></div>
                             <div className="absolute inset-x-8 bottom-8 z-20">
                                 <h3 className="text-3xl font-serif font-bold text-white mb-2">Livestock</h3>
                                 <p className="text-accent font-sans font-bold text-sm uppercase tracking-widest">Eggs · Chicken · Turkey · Catfish · Pork</p>
